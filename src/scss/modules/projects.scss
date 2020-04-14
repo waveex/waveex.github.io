@@ -1,5 +1,6 @@
 .projects {
     background: $projectsBg;
+    padding-bottom: 4rem    ;
     &__header {
         padding: 8rem 0 4rem 8rem;
         &__desription {
@@ -18,10 +19,7 @@
             line-height: 2.75rem;
             border-radius: 1rem;
         }
-        &__continer {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+
     }
 }
 .projects__list {
@@ -81,6 +79,7 @@
                 background: #CBD2D9;
                 transform: matrix(-1, 0, 0, 1, 0, 0);
                 margin: 0 3rem 0 3rem;
+
             }
         }
         &--script {

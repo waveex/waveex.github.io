@@ -21,6 +21,8 @@ console.log(`Cześć, na tej stronie znajdziesz informacje o moich projektach, m
 console.log(`hello, you can find here my projects, hope you like it :)`);
 
 const list = document.querySelector('.projects__list--js');
+const script = document.querySelector (".projects-list__footer--script")
+const demo = document.querySelector (".projects-list__footer--demo")
 
 fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
   .then(resp => resp.json())

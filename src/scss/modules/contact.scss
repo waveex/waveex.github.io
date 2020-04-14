@@ -1,0 +1,63 @@
+.contact {
+    &__container {
+        min-height: 562px;
+        background: $big-stone;
+        display: flex;
+        flex-direction: column;
+    }
+    &__email {
+        text-decoration: none;
+        color: $blue;
+        margin-left: 8rem;
+    }
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        color: white;
+        padding: 4rem 0 0 8rem;
+
+        &::before {
+
+            margin-bottom: 4.5rem;
+            content: " ";
+            width: 80px;
+            height: 4px;
+           display: flex;
+            background: #0593fb;
+            border-radius: 8px;
+        }
+        &--description {
+            padding: 1rem 0 0 8rem;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            color: white;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5rem 0 3rem 8rem;
+
+        &--facebook {
+            margin-right: 1.5rem;
+            content: " ";
+            width: 32px;
+            height: 32px;
+            background: url("../../assets/img/icon-facebook.png");
+        }
+        &--instagram {
+            margin-left: 1.5rem;
+            content: " ";
+            width: 32px;
+            height: 32px;
+            background: url("../../assets/img/icon-instagram.png");
+        }
+    }
+}
