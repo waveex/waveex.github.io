@@ -1,40 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+  <main class="main">
+    <section class="header"> <img class="header__img" src="/assets/img/autor.png" alt="zdjecie autora">
+      <h1 class="header__title">Hello, my name is Michał Jabłoński and I hope that all you can find here,
+        will help help you to get know somethings about me</h1>
+      <p class="header__description">You might be intrested in my developing abilities. <br /> Feel free to glimpese <a
+          class="header__link" href="#projects"> my projects.</a> Currently I'm looking for opportunities to develop,
+        maybe we can reach common
+        goals - <a class="header__link" href="#contact"> contact me.</a></p>
+      <a class="header__email" href="mailto:michaljablonski097@gmail.com">michaljablonski097@gmail.com</a>
+    </section>
+    <div class="skills_container">
+      <h2 class="skills_container__title"> My skills</h2>
+      <section class="skills">
+        <h3 class="skills__title"> Working knowledge</h2>
+          <ul class="skills__list">
+            <li class="skills__item">Semantic HTML</li>
+            <li class="skills__item">SASS</li>
+            <li class="skills__item">Flexbox</li>
+            <li class="skills__item">CSS Grid</li>
+            <li class="skills__item">JS: DOM manipulations</li>
+            <li class="skills__item">JS: Local storage</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">C++</li>
+          </ul>
+      </section>
+      <section class="skills skills--voilet">
+        <h3 class="skills__title"> Know something about</h2>
+          <ul class="skills__list skills__list--voilet">
+            <li class="skills__item">JavaScript ES6+ features</li>
+            <li class="skills__item">C#</li>
+            <li class="skills__item">Progressive web apps</li>
+            <li class="skills__item">Working with API</li>
+            <li class="skills__item">Accessibility</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">NPM Scripts</li>
+          </ul>
+      </section>
+      <section class="skills skills--blue">
+        <h3 class="skills__title"> Want to learn</h2>
+          <ul class="skills__list skills__list--blue">
+            <li class="skills__item">React JS</li>
+            <li class="skills__item">Node.JS</li>
+            <li class="skills__item">Typescript</li>
+            <li class="skills__item">Electron</li>
+          </ul>
+      </section>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
 
-    <script src="js/main.js"></script>
-  </body>
+    </div>
+
+
+
+
+
+
+
+    <section class="projects" id="projects">
+      <div class="projects projects__header">
+        <h2 class="projects__header--title">My projects</h2>
+        <p class="projects__header--desription"> Here's the list of things I've done so far ;).</p>
+      </div>
+      <div class="projects__container">
+        <ul class="projects__list projects__list--js">
+          <li class="projects-list__item">
+            <img class="projects-list__img" src="../assets/img/github.svg" alt="" />
+            <a class="projects-list__link" href="${html_url}">${name}</a>
+            <p class="projects-list__link--description">${description ? description : "brak opisu"}</p>
+            <div class=" projects-list__footer">
+              <button class="projects-list__footer--demo">DEMO</button>
+              <button class="projects-list__footer--sript">GITHUB</button>
+            </div>
+          </li>
+          <li class="projects__list--item">
+            <img src="../assets/img/github.svg" alt="" />
+            <a class="projects__list--link" href="${html_url}">${name}</a>
+            <p class="projects__description">${description ? description : "brak opisu"}</p>
+            <div class=" projects__list--footer">
+              <button class="projects-footer__demo">DEMO</button>
+              <button class="projects-footer__sript">GITHUB</button>
+            </div>
+          </li>  <li class="projects__list--item">
+            <img src="../assets/img/github.svg" alt="" />
+            <a class="projects__list--link" href="${html_url}">${name}</a>
+            <p class="projects__description">${description ? description : "brak opisu"}</p>
+            <div class=" projects__list--footer">
+              <button class="projects-footer__demo">DEMO</button>
+              <button class="projects-footer__sript">GITHUB</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
