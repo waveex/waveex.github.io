@@ -27,6 +27,7 @@
 .projects__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
 }
 .projects-list {
     &__img {
@@ -49,7 +50,16 @@
         background: $projectsBg;
         grid-area: footer;
         margin-top: 3rem;
-        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        &--demo{
+            font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 1.125rem;
+line-height: 2rem;
+
+        }
 
     }
     &__link {
@@ -60,11 +70,12 @@
         line-height: 2.25rem;
         grid-area: content;
         margin: 1rem 0 0 3rem;
+        text-decoration: none;
     }
     &__item {
        display: flex;
        flex-direction: column;
-
+       overflow: hidden;
         width: 580px;
         height: 300px;
         background: #ffffff;

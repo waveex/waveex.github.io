@@ -30,13 +30,13 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
       const { description, html_url, name } = repo;
       list.innerHTML += `
       <li class="projects-list__item">
-      <img src="../assets/img/github.svg" alt="" />
-      <a class="projects-list__link" href="${html_url}">${name}</a>
-      <p class="projects-list__description">${description ? description : "brak opisu"}</p>
-      <div class=" projects-list__footer">
-        <button class="projects-list__footer--demo">DEMO</button>
-        <button class="projects-list__footer--sript">GITHUB</button>
-      </div>
+            <img class="projects-list__img" src="../assets/img/github.svg" alt="" />
+            <a class="projects-list__link" href="${html_url}">${name}</a>
+            <p class="projects-list__link--description">${description ? description : "brak opisu"}</p>
+            <div class=" projects-list__footer">
+              <button class="projects-list__footer--demo">DEMO</button>
+              <button class="projects-list__footer--sript">GITHUB</button>
+            </div>
     </li>
      `;
     }
