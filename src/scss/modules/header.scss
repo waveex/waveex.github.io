@@ -2,7 +2,7 @@
     display: block;
     max-width: $maxwidth;
     margin: 0 auto;
-    padding: calc(8rem - 16px) 0 6.25rem calc(8rem - 16px) ;
+    padding: calc(8rem - 16px) 0 6.25rem calc(8rem - 16px);
 
     &__description {
         text-decoration: none;
@@ -25,5 +25,40 @@
         font-weight: 600;
         font-size: 2.5rem;
         line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 4rem 0 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        &__email {
+            font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 0.875rem;
+line-height: 1.625rem;
+        }
+        &__img {
+            width: 80px;
+            height: 80px;
+        }
+        &__title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.625rem;
+            line-height: 2.25rem;
+        }
+        &__description {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 0.875rem;
+            line-height: 1.625rem;
+        }
     }
 }

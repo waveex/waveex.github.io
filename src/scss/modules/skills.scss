@@ -70,3 +70,18 @@
         }
     }
 }
+
+@media (max-width: 754px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+        &__list {
+            display: flex;
+            flex-direction: column;
+
+        }
+        &__item {
+            padding-bottom: 1.5rem;
+        }
+    }
+}
