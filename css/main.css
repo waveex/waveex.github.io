@@ -710,6 +710,16 @@ template {
     height: 32px;
     background: url("../../assets/img/icon-instagram.png"); }
 
+@media (max-width: 1000px) {
+  .contact__title {
+    padding: 7.5rem 1rem 1.5rem 1rem; }
+    .contact__title--description {
+      padding: .5rem 1rem 1.5rem 1rem; }
+  .contact__email {
+    margin-left: 1rem; }
+  .contact__icon {
+    margin: 0 0 2rem 1rem; } }
+
 html {
   font-family: "Poppins", sans-serif;
   -webkit-box-sizing: border-box;
