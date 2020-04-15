@@ -312,7 +312,7 @@ template {
   display: block;
   max-width: 1187px;
   margin: 0 auto;
-  padding: calc(8rem - 16px) 0 6.25rem; }
+  padding: calc(8rem - 16px) 0 6.25rem calc(8rem - 16px); }
   .header__description {
     text-decoration: none;
     font-style: normal;
@@ -334,7 +334,7 @@ template {
 .skills_container {
   max-width: 1187px;
   margin: 0 auto;
-  padding: calc(8rem - 16px) 0 6.25rem; }
+  padding: 6.25rem 0 8rem calc(8rem - 16px); }
   .skills_container__title {
     font-weight: 600;
     font-size: 2.25rem;
@@ -399,10 +399,14 @@ template {
         background-repeat: no-repeat; }
 
 .projects {
-  background: #f5f7fa;
-  padding-bottom: 4rem; }
+  width: 100%;
+  background: #f5f7fa; }
+  .projects__container {
+    padding: 8rem 0 8rem calc(8rem - 16px);
+    margin: 0 auto;
+    width: 1087px; }
   .projects__header {
-    padding: 8rem 0 4rem 8rem; }
+    padding-bottom: 4rem; }
     .projects__header__desription {
       text-decoration: none;
       font-style: normal;
@@ -411,19 +415,21 @@ template {
       line-height: 2.25rem;
       color: #52606d; }
     .projects__header__title {
+      padding-bottom: 1rem;
       font-style: normal;
       font-weight: 600;
       font-size: 2rem;
-      scroll-padding-left: 22px;
-      line-height: 2.75rem;
-      border-radius: 1rem; }
+      padding-left: 22px;
+      line-height: 2.75rem; }
 
 .projects__list {
   display: -ms-grid;
   display: grid;
+  padding: 0;
+  margin: 0;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 24px; }
+  grid-gap: 1.5rem; }
 
 .projects-list__img {
   width: 48px;
@@ -440,7 +446,7 @@ template {
 
 .projects-list__footer {
   height: 64px;
-  width: 580px;
+  width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   background: #f5f7fa;
@@ -461,7 +467,7 @@ template {
     padding: 0;
     border: none;
     background: none;
-    color: #0593FB;
+    color: #0593fb;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -477,7 +483,7 @@ template {
       background-image: url("../../assets/img/demo-icon.png");
       width: 24px;
       height: 24px;
-      margin: 0 .5rem 0 0; }
+      margin: 0 0.5rem 0 0; }
     .projects-list__footer--demo::after {
       content: " ";
       display: -webkit-box;
@@ -485,7 +491,7 @@ template {
       display: flex;
       height: 32px;
       width: 2px;
-      background: #CBD2D9;
+      background: #cbd2d9;
       -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
           -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
               transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -509,7 +515,7 @@ template {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 48px 0 0;
-    color: #0593FB; }
+    color: #0593fb; }
     .projects-list__footer--script::before {
       content: " ";
       display: inline-block;
@@ -537,8 +543,8 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  width: 580px;
-  height: 300px;
+  width: 100%;
+  max-height: 300px;
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
@@ -632,5 +638,9 @@ body {
 .main {
   background-color: #ffffff;
   margin: 0; }
+
+@media (max-width: 754px) {
+  body {
+    border: none; } }
 
 /*# sourceMappingURL=main.css.map */
