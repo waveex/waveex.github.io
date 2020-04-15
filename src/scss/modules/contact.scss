@@ -61,3 +61,23 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+  .contact {
+      &__title {
+          padding: 7.5rem 1rem 1.5rem 1rem;
+      &--description {
+    padding: .5rem 1rem 1.5rem 1rem;
+      }
+     }
+     &__email{
+         margin-left: 1rem;
+     }
+
+      &__icon {
+     margin: 0 0 2rem 1rem ;
+      }
+  }
+
+}
