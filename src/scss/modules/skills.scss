@@ -1,7 +1,7 @@
 .skills_container {
     max-width: $maxwidth;
     margin: 0 auto;
-    padding: calc(8rem - 16px) 0 6.25rem;
+    padding: 6.25rem 0 8rem calc(8rem - 16px);
 
     &__title {
         font-weight: 600;

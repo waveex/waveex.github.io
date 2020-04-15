@@ -1,8 +1,8 @@
 .header {
     display: block;
-    max-width:$maxwidth;
+    max-width: $maxwidth;
     margin: 0 auto;
-    padding:calc(8rem - 16px) 0 6.25rem;
+    padding: calc(8rem - 16px) 0 6.25rem calc(8rem - 16px) ;
 
     &__description {
         text-decoration: none;
@@ -15,7 +15,6 @@
     &__img {
         width: 120px;
         height: 120px;
-
     }
     &__link,
     &__email {
