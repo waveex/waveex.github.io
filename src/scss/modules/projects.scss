@@ -10,7 +10,7 @@
     &__header {
         padding-bottom: 4rem;
 
-        &__desription {
+        &--desription {
             text-decoration: none;
             font-style: normal;
             font-weight: 300;
@@ -18,7 +18,7 @@
             line-height: 2.25rem;
             color: $gray;
         }
-        &__title {
+        &--title {
             padding-bottom: 1rem;
             font-style: normal;
             font-weight: 600;
@@ -140,14 +140,30 @@
 
 }
 
-@media (max-width: 754px) {
+@media (max-width: 1000px) {
 .projects {
+    &__header{
+
+font-style: normal;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 2rem;
+text-align: center;
+&--title {
+
+text-align: center;
+}
+    }
+    &__container {
+        background-color: #F5F7FA;
+        padding: 5rem 1rem 5rem 1rem;
+    }
 &__list {
     display: flex;
     flex-direction: column;
 }
 &-list__item {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 }
 
