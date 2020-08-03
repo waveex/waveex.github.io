@@ -17,6 +17,7 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
     const repos = resp;
     for (const repo of repos) {
       const { description, html_url, name } = repo;
+      if( name !==  "waveex.github.io") {
       list.innerHTML += `
       <li class="projects-list__item">
       <img class="projects-list__img" src="../assets/img/github.svg" alt="" />
@@ -30,6 +31,7 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
     </li>
      `;
     }
+  }
   })
   .catch(err => {
     console.log(err);
