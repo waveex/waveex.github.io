@@ -69,7 +69,8 @@
         margin-top: 3rem;
         display: flex;
         flex-direction: row-reverse;
-        &--demo {
+
+        &--demo {text-decoration: none;
             font-family: Poppins;
             font-style: normal;
             font-weight: 500;
@@ -102,6 +103,7 @@
             }
         }
         &--script {
+            text-decoration: none;
             font-family: Poppins;
             font-style: normal;
             background: none;
