@@ -25,7 +25,7 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
       <p class="projects-list__link--description">${description ? description : "brak opisu"}</p>
       <div class=" projects-list__footer">
 
-        <button class="projects-list__footer--script" url=(${html_url})>GITHUB</button>
+        <button class="projects-list__footer--script href=${html_url}">GITHUB</button>
         <button class="projects-list__footer--demo">DEMO</button>
       </div>
     </li>
