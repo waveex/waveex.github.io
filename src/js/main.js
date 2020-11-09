@@ -22,12 +22,12 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
       <li class="projects-list__item">
       <img class="projects-list__img" src="../assets/img/github.svg" alt="" />
       <a class="projects-list__link" a >${name}</a>
-      <p class="projects-list__link--description">${description ? description : "work in progress demo coming soon"}</p>
+      <p class="projects-list__link--description">${description ? description : "work in progress demo coming soon 👨‍💻"}</p>
       <div class=" projects-list__footer">
 <a href="${html_url}" target="_blank" rel="nofollow noreferrer"  class="projects-list__footer--script projects-list__footer--script-js">GITHUB</a>
    ${
      homepage ? `<a href="${homepage}" target="_blank" rel="nofollow noreferrer" class="projects-list__footer--demo projects-list__footer--demo-js">DEMO</a>` :
-     ''
+     ``
    }
       </div>
     </li>
