@@ -512,7 +512,7 @@ template {
           flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-height: 300px;
+  min-height: 200px;
   background: #ffffff;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
