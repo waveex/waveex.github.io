@@ -26,7 +26,7 @@ fetch('https://api.github.com/users/waveex/repos?sort=updated&direction=desc')
       <div class=" projects-list__footer">
 <a href="${html_url}" target="_blank" rel="nofollow noreferrer"  class="projects-list__footer--script projects-list__footer--script-js">GITHUB</a>
    ${
-     homepage ? '<a href="${homepage}" target="_blank" rel="nofollow noreferrer" class="projects-list__footer--demo projects-list__footer--demo-js">DEMO</a>' :
+     homepage ? `<a href="${homepage}" target="_blank" rel="nofollow noreferrer" class="projects-list__footer--demo projects-list__footer--demo-js">DEMO</a>` :
      ''
    }
       </div>
